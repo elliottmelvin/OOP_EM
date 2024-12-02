@@ -22,4 +22,23 @@ public class As1_Crop {
     public String toString(){
         return name + " " + yield + " " + units + " " + price + " " + acres;
     }
+
+    public String printMe(){
+        return "Crop: " + name + "  Yield: " + yield + "    Units: " + units + "    Price: " + price + "    Acres: " + acres;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public double harvest(){
+        double harvestAmount = yield * price * acres;
+        System.out.println("Harvest value: " + harvestAmount);
+
+        return harvestAmount;
+    }
+
+    public void addAcres(int newAcres) {
+        acres += newAcres;
+    }
 }

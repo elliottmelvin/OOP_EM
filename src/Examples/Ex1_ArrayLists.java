@@ -30,4 +30,6 @@ public class Ex1_ArrayLists {
             System.out.println(allNames.get(i)+" $"+ allDollars.get(i));
         }
     }
+
+
 }
