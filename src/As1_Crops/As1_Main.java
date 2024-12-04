@@ -8,11 +8,11 @@ public class As1_Main {
     public static void run() {
         ArrayList<As1_Crop> allCrops = new ArrayList<As1_Crop>();
 
-        allCrops.add(new As1_Crop("Saffron", 9, "lbs", 521.34));
+        allCrops.add(new As1_Crop("Saffron", 9, "lbs", 10000));
         allCrops.add(new As1_Crop("Sugarcane", 28, "tons", 663.00));
         allCrops.add(new As1_Crop("Soybean", 47, "bushels", 9.80));
         allCrops.add(new As1_Crop("Banana", 43, "tons", 497.50));
-        allCrops.add(new As1_Crop("Mango", 40, "lbs", 412.00));
+        allCrops.add(new As1_Crop("Mango", 720, "kgs", 6.50));
 
         allCrops.get(0).setAcres(200);
         allCrops.get(1).setAcres(200);
@@ -54,7 +54,7 @@ public class As1_Main {
 
                     if (doHarv.toLowerCase().contains("y")){
                         totalRevenue += allCrops.get(foundIndex).harvest();
-
+                        allCrops.get(foundIndex).setAcres(0);
                     }
                 }
             }
